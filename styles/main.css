@@ -79,7 +79,7 @@ p {
     
     background: rgb(241, 241, 241);
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
 
     
 }
@@ -87,8 +87,11 @@ p {
 .Input {
     border: 0;
     background: rgb(241, 241, 241);
-
+    /* box-shadow: none; */
+    outline: 0;
+    font-size: 14px;
 }
+
 
 .SubTitulo1 {
     padding-top: 15px;
