@@ -1,0 +1,178 @@
+
+*, *::before , *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(90, 90, 156);
+}
+
+/* HEADER */
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 2.5em;
+}
+
+.Nav-ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.Nav-ul-li {
+    padding: .5em;
+    list-style-type: none;
+}
+
+.Nav-ul-li-a {
+    text-decoration: none;
+    font-size: 1.2em;    
+}
+
+.Selected {
+    font-weight: bold;
+}
+
+
+.Section1 {
+    
+    background: skyblue;
+    text-align: center;
+    padding: 2.5em 10em;
+}
+
+.Section1-titulo {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+
+
+.Contenedor {
+    padding-top: 30px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.Buscar-Articulo {
+    
+    
+    background: rgb(241, 241, 241);
+    padding: 15px;
+    border-radius: 5px;
+
+    
+}
+
+.Input {
+    border: 0;
+    background: rgb(241, 241, 241);
+
+}
+
+.SubTitulo1 {
+    padding-top: 15px;
+    
+}
+
+
+.Section-Pupular {
+    display: flex;
+    flex-direction: row;
+  }
+
+.Article-Popular {
+padding-right: 10px;    
+}
+
+.SubTitulo-Article-Popular {
+    font-size: 40px;
+}
+
+.Autor-Articulo {
+    padding-bottom: 1em;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.Fecha-Articulo {
+    padding: 0;
+    margin: 0;
+    /* font-weight: bold; */
+    font-size: 1.5em;
+}
+
+.Pie-Articulo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+.Iconos {
+    display: flex;
+    justify-content: center;
+
+    padding: 1.5em;
+}
+
+.Article-img {
+    width: 540px;
+}
+
+.Texto-Article-Popular {
+    line-height : 25px;
+}
+
+@media (max-width: 600px) {
+    .Nav-ul-li-a {
+        text-decoration: none;
+        font-size: 1em;    
+    }
+    
+
+    .Contenedor {
+        padding-top: 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .Section1 {
+    
+        background: skyblue;
+        text-align: center;
+        padding: 2.5em 6em;
+    }
+    .Section1-titulo {
+        font-size: 2.2em;
+        font-weight: bold;
+    }
+    p {
+        font-size: 15px;
+    }
+
+    .Section-Pupular {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    .Article-Popular {
+        padding-right: 0px;    
+    }
+    .Article-img {
+        width: 335px;
+    }
+    .SubTitulo-Article-Popular {
+        font-size: 20px;
+    }
+  }
