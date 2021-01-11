@@ -14,10 +14,12 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
+    font-family: Arial, Helvetica, sans-serif;
     color: rgb(90, 90, 156);
 }
 
+/*#########################################################*/
 /* HEADER */
 
 .Header {
@@ -48,25 +50,32 @@ body {
     font-weight: bold;
 }
 
+/*#########################################################*/
+
+
+
 
 .Section1 {
     
     background: skyblue;
     text-align: center;
-    padding: 2.5em 10em;
+    padding: 1em 20em;
+    color: white;
 }
 
 .Section1-titulo {
     font-size: 3em;
-    font-weight: bold;
+    /* font-weight: bold; */
+    
 }
 
-p {
-    font-size: 20px;
+.Section1 p {
+    font-size: 18px;
+    line-height: 30px;
 }
 
 
-
+/*#########################################################*/
 
 .Contenedor {
     padding-top: 30px;
@@ -105,10 +114,14 @@ p {
   }
 
 .Article-Popular {
-padding-right: 10px;    
+    padding-right: 10px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .SubTitulo-Article-Popular {
+    margin-top: 0;
     font-size: 40px;
 }
 
@@ -133,25 +146,211 @@ padding-right: 10px;
 
 .Iconos {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 
-    padding: 1.5em;
+    padding: 1em;
 }
 
 .Article-img {
-    width: 540px;
+    width: 35em;
+    
 }
 
 .Texto-Article-Popular {
     line-height : 25px;
 }
 
+
+
+/*#########################################################*/
+
+.Articulos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Articulo-Item {
+    width: 350px;
+    padding: 5px;
+}
+
+.Articulo-Item-Imagen {
+    width: 100%;
+}
+.Articulo-Item-Titulo {
+    font-size: 1.7em;
+}
+
+.Articulo-Item-Texto {
+    font-size: 1.35em;
+    line-height: 30px;
+    color: dimgrey;
+}
+
+
+/*#########################################################*/
+
+
+.Alinear-Texto-Derecha {
+    text-align: right;
+}
+
+.Texto-Negrita {
+    font-weight: bold;
+}
+
+.Contenedor-Linea {
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+/* 
+.Contenedor-Linea hr {
+    color: darkgrey;
+} */
+
+/*#########################################################*/
+
+.Articulo-Item-All {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 15px 0px;
+}
+
+.Articulo-Item-All-Imagen {
+    padding-right: 10px;
+}
+
+.Articulo-Item-All-Contenido-Texto {       
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Articulo-Item-All-Titulo {
+    font-size: 1.7em;
+    margin-top: 0;
+}
+
+/*#########################################################*/
+
+@media (max-width: 1280px) {
+
+    .Section1 {
+    
+        background: skyblue;
+        text-align: center;
+        padding: 1em 20em;
+        color: white;
+    }
+
+
+    .Contenedor {
+        padding-top: 30px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    .Article-img {
+        width: 25em;        
+    }
+    
+}
+
+/* Tablet */
+  @media (max-width: 800px) {
+
+    .Section1 {
+    
+        background: skyblue;
+        text-align: center;
+        padding: 0.8em 6em;
+        color: white;
+    }
+
+    .Section1-titulo {
+        font-size: 3em;
+        /* font-weight: bold; */
+        margin: 30px 0px;
+        
+    }
+
+    .Contenedor {
+        padding-top: 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    .Article-Popular {
+        padding-right: 10px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;   
+    }
+    .SubTitulo-Article-Popular {
+        margin-top: 0;
+        font-size: 24px;
+    }
+    .Texto-Article-Popular {
+        line-height : 25px;
+        color: dimgrey;
+        font-size: 14px;
+    }
+    .Article-img {
+        width: 400px;
+    }    
+
+    
+
+    .Articulo-Item-Titulo {
+        font-size: 1.1em;
+    }
+    
+    .Articulo-Item-Texto {
+        font-size: 1em;
+        line-height: 30px;
+        color: dimgrey;
+    }
+
+    .Contenedor-Linea {
+        padding: 20px 0px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .Articulo-Item-All-Titulo {
+        font-size: 1.1em;
+    }
+    
+    .Articulo-Item-All-Imagen {
+        width: 18em;
+    }
+
+  }
+
+
+
+
+
+/* MOBILE */
 @media (max-width: 600px) {
     .Nav-ul-li-a {
         text-decoration: none;
         font-size: 1em;    
     }
+
+    .Section1 {
     
+        background: skyblue;
+        text-align: center;
+        padding: 1px 1px;
+    }
 
     .Contenedor {
         padding-top: 10px;
@@ -161,29 +360,77 @@ padding-right: 10px;
     
     .Section1 {
     
-        background: skyblue;
+        background: rgb(131, 181, 255);
         text-align: center;
-        padding: 2.5em 6em;
+        padding: .5em 4.5em;
+        color: white;
     }
     .Section1-titulo {
-        font-size: 2.2em;
+        font-size: 1.2em;
         font-weight: bold;
+        padding: 0px 25px;
     }
-    p {
-        font-size: 15px;
+    .Section1 p {
+        font-size: 12px;
+        line-height: 20px;
     }
+
 
     .Section-Pupular {
         display: flex;
         flex-direction: column-reverse;
       }
     .Article-Popular {
-        padding-right: 0px;    
+        padding-right: 0px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;   
     }
     .Article-img {
-        width: 335px;
+        width: 100%;
     }
     .SubTitulo-Article-Popular {
-        font-size: 20px;
+        margin-top: 10px;
+        font-size: 18px;
+        margin: 10px 0px 10px 0px;
     }
+    .Texto-Article-Popular {
+        margin: 0px 0px 15px 0px;
+        line-height : 25px;
+    }
+
+
+
+    .Articulos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .Articulo-Item {
+        width: 100%;
+        padding: 5px 0px;
+    }
+
+    
+
+    .Articulo-Item-All {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        padding: 15px 0px;
+    }
+
+    .Articulo-Item-All-Imagen {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .Articulo-Item-All-Titulo {
+        margin-top: 10px;
+        font-size: 18px;
+        margin: 10px 0px 10px 0px;
+    }
+
   }
